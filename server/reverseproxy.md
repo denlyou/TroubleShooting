@@ -63,3 +63,7 @@ server {
   }
 }
 ```
+
+---
+
+- [nginx 설정 파일의 location expression](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms)
