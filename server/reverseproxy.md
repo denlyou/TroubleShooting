@@ -12,7 +12,7 @@
 - nginx나 apache의 reverse proxy 설정으로 충분히 해결 가능해짐
 
 ##### nginx 설정 파일 (/etc/nginx/sites-available/nodeserver)
-```shell
+```
 server {
 	listen 80;
 	server_name sub.domain.co.kr;
@@ -32,8 +32,9 @@ server {
 - 주의 : express 프로젝트라면 `app.set('trust proxy', true)` 설정 추가
     - request의 header ip 주소 문제
 
-##### 심화 설정의 예
-```shell
+
+##### 심화 설정의 예 (주 정적 파일들 nginx로 그외 3000포트(nodejs)로 넘김)
+```
 server {
   listen 80;
   listen [::]:80;
@@ -53,7 +54,7 @@ server {
   }
 
   location / {
-		proxy_pass http://127.0.0.1:8001/;
+		proxy_pass http://127.0.0.1:3000/;
 		proxy_redirect off;
 		proxy_set_header X-Real-IP $remote_addr;
 		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
