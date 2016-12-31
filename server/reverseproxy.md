@@ -44,7 +44,7 @@ server {
   root /var/www/html/sub.domain;
   index index.php index.html;
 
-  location ~* \.(html|js|css|jpe?g|png|gif|ico|zip|pdf|mp3|mp4|avi|)$ {
+  location ~* \.(html|js|css|jpe?g|png|gif|ico|zip|pdf|mp3|mp4|avi)$ {
     root /var/www/html/sub.domain;
   }
 
