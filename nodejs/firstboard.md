@@ -35,6 +35,6 @@
 - 결론은 `req.body`객체로 온다는 것을 알게 됨
 - Request 객체의 사용법 자체를 너무 몰라 전체 레퍼런스를 훝어볼 필요가 있었음
 
-##### 문제) Error: Can't set headers after they are sent.
-- [response의 header 문제](http://stackoverflow.com/questions/7042340/error-cant-set-headers-after-they-are-sent-to-the-client)
+##### Trouble) Error: Can't set headers after they are sent.
+- [response의 header를 두번 설정하면 생기는 문제](http://stackoverflow.com/questions/7042340/error-cant-set-headers-after-they-are-sent-to-the-client)
 - nodemon으로 돌렸는데도 이 문제로 죽으면 재실행이 안됨 :scream:
