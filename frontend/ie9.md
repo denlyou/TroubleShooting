@@ -34,7 +34,7 @@ var chdate = "2017-01-14T09:00:00+0900");
 var ckdate = new Date( moment(chdate).unix()*1000 ); // unix 타임은 sec로 반환되서 1000을 계상해주어야 합
 var _now = new Date();
 if(ckdate.getTime() < _now.getTime()){
-  alert('현재보다 과거 시간을 작업일로 설정할 수 없습니다.');
+  alert('현재보다 과거 시간으로 설정할 수 없습니다.');
   return false;
 };
 ```
