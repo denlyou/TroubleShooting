@@ -3,6 +3,13 @@
 
 ## Server
 
+- **[2017/01/10]** [ie9 브라우저 호환성 맞추기 삽질기](frontend/ie9.md)
+>- jquery ajax 통신 문제
+>  - 대안 : axios 라이브러리
+>- 시간 계산 문제
+>  - momentjs 라이브러리 활용
+>- selectbox 커스텀
+
 - **[2016/12/30]** [express(nodejs)로 게시판 만들기 첫걸음](nodejs/firstboard.md)
 > - mysql 모듈 연동
 >  - connection pool로 설정
