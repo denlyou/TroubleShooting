@@ -43,5 +43,20 @@ if(ckdate.getTime() < _now.getTime()){
 #### selectbox 커스텀
 - css로 변형 하는 방법이 있으나 그냥 기본 form 모양을 제거하고, 바깥에 div박스를 둘러싸서 배경 이미지 처리를 추천!
 - div로 selectbox만들기 => http://webclub.tistory.com/235
-
 > 추천 라이브러리 => https://tympanus.net/Development/SelectInspiration/
+
+- option 폰트 size (ie11이상은 css에서 font-size로 가능 그이하 jquery이용 )
+```js
+if(jQuery.browser.msie) $("select").css("font-size", "150%");
+```
+
+- 한개의 아이템 찾아 지우기 example (ie10이하에서 `객체.remove()` 이 먹히지 않음)
+```js
+var all_el_ul = document.getElementsByClassName('element_list')[0];
+var div_list  = all_el_ul.getElementsByTagName("div");
+
+for (i = 0; i < div_list.length; i += 1) {         
+   div_list[i].parentNode.removeChild(div_list[i]);             
+}
+```
+> 출처 http://stackoverflow.com/questions/20428877/javascript-remove-doesnt-work-in-ie
