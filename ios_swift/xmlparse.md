@@ -34,9 +34,10 @@ let url = "http://openapi.gbis.go.kr/ws/rest/busstationservice?serviceKey=\(serv
 #### MXL 파싱 부분
 >- 별다른 라이브러리 없이도 NSXMLParserDelegate 프로토콜을 구현하면 가능함
 >  - 심지어 url로 인스턴스 생성 파라미터를 집어넣으면 알아서 통신도 함
->  - http://rhammer.tistory.com/131
+>  - 참고 자료 => http://rhammer.tistory.com/131
 - [SWXMLHash 라이브러리 사용하기로 함](https://github.com/drmohundro/SWXMLHash)
   - xml을 그나마 접근하기 쉬운 형태로 만들어줌!
+  - xml online viewer => http://xmlgrid.net/
 
 #### 샘플 코드
 
