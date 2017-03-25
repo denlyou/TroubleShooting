@@ -3,6 +3,12 @@
 
 ## Category
 
+- **[2017/03/25]** [정부 공공데이터 xml 파싱 삽질기](ios_swift/xmlparse.md)
+>- 공공데이터 홈페이지 API 발급시 주의사항
+>  - restAPI 호출 query string과 urlencoding 주의
+>- NSXMLParserDelegate를 사용해도 구현은 가능하나 어려움..
+>- 외부 라이브러리 사용 예시 (Alamofire, SWXMLHash)
+
 - **[2017/01/14]** [ie9 브라우저 호환성 맞추기 삽질기](frontend/ie9.md)
 >- jquery ajax 통신 문제
 >  - 대안 : axios 라이브러리
