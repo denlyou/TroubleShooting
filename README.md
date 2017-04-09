@@ -3,7 +3,14 @@
 
 ## Category
 
-- **[2017/03/25]** [정부 공공데이터 xml 파싱 삽질기](ios_swift/xmlparse.md)
+- **[2017/04/08]** [Java Server (Tomcat8.5)세팅기](server/tomcat8setting.md)
+>- Oracle JDK 설치
+>- Tomcat8 설치 및 설정
+>  - 자동 시작하게 하기 (systemctl)
+>- mariaDB 연동
+>- nginx 연동 (reverse proxy)
+
+- **[2017/03/25]** [iOS 개발 : 정부 공공데이터 xml 파싱 삽질기](ios_swift/xmlparse.md)
 >- 공공데이터 홈페이지 API 발급시 주의사항
 >  - restAPI 호출 query string과 urlencoding 주의
 >- NSXMLParserDelegate를 사용해도 구현은 가능하나 어려움..
